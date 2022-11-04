@@ -2,8 +2,8 @@
   var disqus_config;
 
   disqus_config = function() {
-    this.page.url = 'https://maj3x.github.io/assets/js/disqus_comments.js';
-    this.page.identifier = 'https://maj3x.github.io/assets/js/disqus_comments.js';
+    this.page.url = 'https://maj3x.wtf/assets/js/disqus_comments.js';
+    this.page.identifier = 'https://maj3x.wtf/assets/js/disqus_comments.js';
     return false;
   };
 
