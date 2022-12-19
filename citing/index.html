@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="/assets/css/osqp.css">
 
-    <title>OSQP  </title><!-- Global site tag (gtag.js) - Google Analytics -->
+    <title>OSQP  - Citing OSQP  </title><!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56714542-3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -66,7 +66,7 @@
 
   
     
-      <li class="nav-item"><a class="nav-link" href="/citing/">Citing </a></li>
+      <li class="nav-item active"><a class="nav-link" href="/citing/" >Citing </a></li>
     
   
 
@@ -86,25 +86,97 @@
 
 </nav>
 <main class="flex-grow">
-        <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+        <div class="content py-5 bg-white">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-10"><h2>Citing OSQP</h2><p>If you use OSQP for published work, we encourage you to</p>
 
-<div class="container">
-  <h1>404</h1>
+<ul>
+  <li>Cite the accompanying papers</li>
+  <li>Put a star on <a class="github-button" href="https://github.com/osqp/osqp" data-size="large" data-show-count="true" aria-label="Star osqp/osqp on GitHub">GitHub</a></li>
+</ul>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<p>We are looking forward to hearing your success stories with OSQP! Please <a href="mailto:bartolomeo.stellato@gmail.com">share them with us</a>.</p>
+
+<h3 id="papers">Papers</h3>
+
+<h4 id="main-paper">Main paper</h4>
+<p>Main algorithm description, derivation and benchmark available in this <a href="https://web.stanford.edu/~boyd/papers/pdf/osqp.pdf">paper</a>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article<span class="p">{</span>osqp,
+  author  = <span class="p">{</span>Stellato, B. and Banjac, G. and Goulart, P. and Bemporad, A. and Boyd, S.<span class="p">}</span>,
+  title   = <span class="p">{{</span>OSQP<span class="p">}</span>: an operator splitting solver for quadratic programs<span class="p">}</span>,
+  journal = <span class="p">{</span>Mathematical Programming Computation<span class="p">}</span>,
+  year    = <span class="p">{</span>2020<span class="p">}</span>,
+  volume  = <span class="p">{</span>12<span class="p">}</span>,
+  number  = <span class="p">{</span>4<span class="p">}</span>,
+  pages   = <span class="p">{</span>637--672<span class="p">}</span>,
+  doi     = <span class="p">{</span>10.1007/s12532-020-00179-2<span class="p">}</span>,
+  url     = <span class="p">{</span>https://doi.org/10.1007/s12532-020-00179-2<span class="p">}</span>,
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="infeasibility-detection">Infeasibility detection</h4>
+<p>Infeasibility detection proofs using ADMM (also for general conic programs) in this <a href="https://stanford.edu/~boyd/papers/pdf/admm_infeas.pdf">paper</a>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article<span class="p">{</span>osqp-infeasibility,
+  author  = <span class="p">{</span>Banjac, G. and Goulart, P. and Stellato, B. and Boyd, S.<span class="p">}</span>,
+  title   = <span class="p">{</span>Infeasibility detection in the alternating direction method of multipliers for convex optimization<span class="p">}</span>,
+  journal = <span class="p">{</span>Journal of Optimization Theory and Applications<span class="p">}</span>,
+  year    = <span class="p">{</span>2019<span class="p">}</span>,
+  volume  = <span class="p">{</span>183<span class="p">}</span>,
+  number  = <span class="p">{</span>2<span class="p">}</span>,
+  pages   = <span class="p">{</span>490--519<span class="p">}</span>,
+  doi     = <span class="p">{</span>10.1007/s10957-019-01575-y<span class="p">}</span>,
+  url     = <span class="p">{</span>https://doi.org/10.1007/s10957-019-01575-y<span class="p">}</span>,
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="gpu-implementation">GPU implementation</h4>
+<p>GPU implementation and PCG method for solving linear systems in this <a href="https://doi.org/10.1016/j.jpdc.2020.05.021">paper</a>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article<span class="p">{</span>osqp-gpu,
+  author  = <span class="p">{</span>Schubiger, M. and Banjac, G. and Lygeros, J.<span class="p">}</span>,
+  title   = <span class="p">{{</span>GPU<span class="p">}</span> acceleration of <span class="p">{</span>ADMM<span class="p">}</span> for large-scale quadratic programming<span class="p">}</span>,
+  journal = <span class="p">{</span>Journal of Parallel and Distributed Computing<span class="p">}</span>,
+  year    = <span class="p">{</span>2020<span class="p">}</span>,
+  volume  = <span class="p">{</span>144<span class="p">}</span>,
+  pages   = <span class="p">{</span>55--67<span class="p">}</span>,
+  doi     = <span class="p">{</span>10.1016/j.jpdc.2020.05.021<span class="p">}</span>,
+  url     = <span class="p">{</span>https://doi.org/10.1016/j.jpdc.2020.05.021<span class="p">}</span>,
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="code-generation">Code generation</h4>
+<p>Code generation functionality and example in this <a href="https://stanford.edu/~boyd/papers/pdf/osqp_embedded.pdf">paper</a>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@inproceedings<span class="p">{</span>osqp-codegen,
+  author    = <span class="p">{</span>Banjac, G. and Stellato, B. and Moehle, N. and Goulart, P. and Bemporad, A. and Boyd, S.<span class="p">}</span>,
+  title     = <span class="p">{</span>Embedded code generation using the <span class="p">{</span>OSQP<span class="p">}</span> solver<span class="p">}</span>,
+  booktitle = <span class="p">{</span>IEEE Conference on Decision and Control (CDC)<span class="p">}</span>,
+  year      = <span class="p">{</span>2017<span class="p">}</span>,
+  doi       = <span class="p">{</span>10.1109/CDC.2017.8263928<span class="p">}</span>,
+  url       = <span class="p">{</span>https://doi.org/10.1109/CDC.2017.8263928<span class="p">}</span>,
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="mixed-integer-optimization">Mixed-integer optimization</h4>
+<p>A branch-and-bound solver for mixed-integer quadratic optimization in this <a href="https://stellato.io/downloads/publications/2018/miosqp_ecc.pdf">paper</a>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@inproceedings<span class="p">{</span>miosqp,
+  author    = <span class="p">{</span>Stellato, B. and Naik, V. V. and Bemporad, A. and Goulart, P. and Boyd, S.<span class="p">}</span>,
+  title     = <span class="p">{</span>Embedded mixed-integer quadratic optimization using the <span class="p">{</span>OSQP<span class="p">}</span> solver<span class="p">}</span>,
+  booktitle = <span class="p">{</span>European Control Conference (ECC)<span class="p">}</span>,
+  year      = <span class="p">{</span>2018<span class="p">}</span>,
+  doi       = <span class="p">{</span>10.23919/ECC.2018.8550136<span class="p">}</span>,
+  url       = <span class="p">{</span>https://doi.org/10.23919/ECC.2018.8550136<span class="p">}</span>,
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+			</div>
+		</div>
+	</div>
 </div>
 
     </main>    <footer class="footer">
